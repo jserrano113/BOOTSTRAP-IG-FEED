@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram Feed</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-0">
+            <div class="container">
+                <div class="col-2">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <a class="navbar-brand" href="#">Instagram</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="col-3 offset-10">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <a class="btn btn-success text-white" data-toggle="modal"
+                                        data-target="#modalnewpost">Create a new post</a>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-cog pt-3" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Accessability</a>
+                                    <a class="dropdown-item" href="#">Privacy and data</a>
+                                    <a class="dropdown-item text-danger" href="#">log out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+                    <div class="modal fade" id="modalnewpost" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="row modal-body">
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <button class="btn btn-light border-secondary mx-1 px-2 py-1 ml-3"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                                        <button class="btn btn-light border-secondary px-2 py-0 pt-1"><h5><i class="fa fa-map-marker" aria-hidden="true"></i></h5></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-light text-secondary" id="home-tab" data-toggle="tab"
+                            href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-th" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light text-secondary" id="post-tab" data-toggle="tab"
+                            href="#post" role="tab" aria-controls="post" aria-selected="false"><i class="fa fa-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <img class="col-4 p-0" src="https://images.pexels.com/photos/9400825/pexels-photo-9400825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                        <img class="col-4 pr-1 pl-1" src="https://images.pexels.com/photos/1797195/pexels-photo-1797195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                        <img class="col-4 p-0" src="https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg">
+                    </div>
+                    <div class="row">
+                        <img class="col-4 p-0 pt-1 pb-1" src="https://images.pexels.com/photos/6379409/pexels-photo-6379409.jpeg">
+                        <img class="col-4 pr-1 pl-1 pt-1 pb-1" src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                        <img class="col-4 p-0 pt-1 pb-1" src="https://images.pexels.com/photos/11991584/pexels-photo-11991584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                    </div>
+                    <div class="row">
+                        <img class="col-4 p-0" src="https://images.pexels.com/photos/3732494/pexels-photo-3732494.jpeg">
+                        <img class="col-4 pr-1 pl-1" src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                        <img class="col-4 p-0" src="https://images.pexels.com/photos/951539/pexels-photo-951539.jpeg">
+                    </div>
+                </div>
+                <div class="tab-pane bg-light" id="post" role="tabpanel" aria-labelledby="post-tab">
+                     <div class="container mt-5 col-6  bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">Miami, FL</h4>
+                            <h5 class="ml-auto p-2 text-secondary">1/9</h5>
+                        </div>              
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/9400825/pexels-photo-9400825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>78 Likes</strong></h6>
+                            <h6>My favorite city in the world. The city I was born and raised in. Look at this beautiful skyline. I love you Miami, FL. #BornAndRaised #DadeCounty #BaySide #305 #SkyLine</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">Chicago, IL</h4>
+                            <h5 class="ml-auto p-2 text-secondary">2/9</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/1797195/pexels-photo-1797195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>69 Likes</strong></h6>
+                            <h6>Chicago feels alive. The city is breathing. One of the most beautiful cities in the world. There is something here for everyone. Can't wait to visit again. #Chicago #ChiTown #SkyLine</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                        </div>
+                    
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">San Francisco, CA</h4>
+                            <h5 class="ml-auto p-2 text-secondary">3/9</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>106 Likes</strong></h6>
+                            <h6>San Francisco is one of my go to cities. I guarantee you'll never see another city like SF. The Bay area is specail. They live in their own world and when you're there you get sucked into. Everytime I visit I make sure to see the Golden Gate Bridge. Trust me you'll never get tired of this view. #SF #TheBay #GoldenGateBridge</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">New Orleans, LA</h4>
+                            <h5 class="ml-auto p-2 text-secondary">4/9</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/6379409/pexels-photo-6379409.jpeg" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>88 Likes</strong></h6>
+                            <h6>From the non stop party on Bourbon street to the live music on Magazine street. You'll always find something to do in New Orleans. A historic cities in many ways.  #BourbonStreet #NOLA</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">New York City, NY</h4>
+                            <h5 class="ml-auto p-2 text-secondary">5/9</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>74 Likes</strong></h6>
+                            <h6>Theres a reason New York City is considered the Capital of the world. This city has inspired some of the greatest inovators this world has ever seen. "If you can make it here you can make it anywhere." #NewYorkCity #BigApple #NYSkyLine</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="d-flex">
+                            <H4 class="p-2">Orlando, FL</h4>
+                            <h5 class="ml-auto p-2 text-secondary">6/9</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/11991584/pexels-photo-11991584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>98 Likes</strong></h6>
+                            <h6>As a Miami native Orlando has always been my vaction city. With just a four hour drive you can enjoy all that Disney has to offer. #DisneyWorld #Orlando #CinderellaCastle</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous">
+        </script>
+
+    </body>
+
+</html>
